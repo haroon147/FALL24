@@ -14,7 +14,7 @@ class _RotationAnnimationState extends State<RotationAnnimation> with SingleTick
   void initState() {
     // TODO: implement initState
     super.initState();
-    _animationController = AnimationController(vsync: this, duration: const Duration(seconds: 4));
+    _animationController = AnimationController(vsync: this, duration: const Duration(seconds:1));
     _animationController.repeat();
   }
 
