@@ -1,7 +1,10 @@
+import 'package:classweek2/Annimations/ExplicitAnnimations/TweeenPractice.dart';
 import 'package:classweek2/Annimations/Rough/file2.dart';
 import 'package:flutter/material.dart';
 
 import 'ExplicitAnnimations/RotationAnnimation.dart';
+import 'ExplicitAnnimations/TweenAnnimation.dart';
+import 'ExplicitAnnimations/TweenAnnimationBuilder.dart';
 import 'ImplicitAnnimation/AnimatedSwitcher.dart';
 import 'ImplicitAnnimation/AnnimatedOpacity.dart';
 import 'ImplicitAnnimation/AnnimatedContainer.dart';
@@ -44,6 +47,15 @@ class _AnnimationHomeState extends State<AnnimationHome> with SingleTickerProvid
             ElevatedButton(onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context)=> RotationAnnimation()));
             }, child: Text("RotationAnnimation"),),
+            ElevatedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> TweenAnimationExample()));
+            }, child: Text("TweenAnnimation"),),
+            ElevatedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> TweenPractice()));
+            }, child: Text("TweenPractice"),),
+            ElevatedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> TweenAnnimationBuilder()));
+            }, child: Text("TweenAnnimationBuider"),),
 
 
 

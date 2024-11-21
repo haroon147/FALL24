@@ -38,6 +38,8 @@ dependencies:
   email_validator: ^3.0.0
   multi_validator: ^1.0.1
   form_field_validator: ^1.1.0
+  image_picker_android: ^0.8.12+17
+  image_picker: ^1.1.2
 
 dev_dependencies:
   flutter_test:

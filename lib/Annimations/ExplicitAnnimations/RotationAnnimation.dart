@@ -8,13 +8,13 @@ class RotationAnnimation extends StatefulWidget {
 }
 
 class _RotationAnnimationState extends State<RotationAnnimation> with SingleTickerProviderStateMixin {
+
   late AnimationController _animationController;
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    _animationController = AnimationController(vsync: this, duration: Duration(seconds: 2));
-
+    _animationController = AnimationController(vsync: this, duration: const Duration(seconds: 4));
     _animationController.repeat();
   }
 
@@ -24,7 +24,7 @@ class _RotationAnnimationState extends State<RotationAnnimation> with SingleTick
       body: Center(
         child: RotationTransition(
           alignment: Alignment.center,
-            turns:Tween<double>(begin: 0, end: 1).animate(_animationController),
+            turns: Tween<double>(begin: 0, end: 1).animate(_animationController),
             child: Container(
             height: 200,
           width: 200,
@@ -39,7 +39,7 @@ class _RotationAnnimationState extends State<RotationAnnimation> with SingleTick
         else{
           _animationController.repeat();
         }
-      }, child: Icon(Icons.stop_circle),),
+      }, child: const Icon(Icons.stop_circle),),
     );
   }
 }
